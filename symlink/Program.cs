@@ -36,9 +36,13 @@ namespace symlink
 
         static void makeFileLink(string command)
         {
-
             foreach (string file in getFiles())
             {
+                if (!file.StartsWith(command.Split('\"')[1].First()))
+                {
+                    MessageBox.Show("Unable to hard link two files on different volumes.");
+                    return;
+                }
                 String newCommand = command;
                 String linkFileName = file.Split('\\')[^1];
                 if (linkFileName.Contains('.')) newCommand += '\\' + linkFileName + '\"';
@@ -62,7 +66,7 @@ namespace symlink
         static void makeFolderLink(string command)
         {
             string? folder = getFolder();
-            if(folder == null)
+            if (folder == null)
             {
                 MessageBox.Show("Folder path invalid.");
                 return;
