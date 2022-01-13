@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "mklink": {
+      "commandName": "Project",
+      "commandLineArgs": "\"E:\\Data G HDD\\Data\\Videot\\Sarjat ja Elokuvat\""
+    }
+  }
+}
