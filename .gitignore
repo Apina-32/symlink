@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-launchSettings.json
+launchSettings.*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -22,6 +22,7 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Pp]roperties/
 x64/
 x86/
 [Ww][Ii][Nn]32/
